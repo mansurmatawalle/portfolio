@@ -1,0 +1,300 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Services section styles */
+.services {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services .box1, .services .box2, .services .box3 {
+    padding: 20px;
+    margin: 20px;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.services h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Portfolio section styles */
+.Portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Portfolio .box1, .Portfolio .box2, .Portfolio .box3 {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Portfolio h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Portfolio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact section styles */
+.Contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact input[type="text"], .Contact input[type="email"], .Contact textarea, .Contact button {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Contact button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+} 
+/* Contact section styles */
+.Contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact input[type="text"],
+.Contact input[type="email"],
+.Contact textarea,
+.Contact button {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Make inputs and textarea full width */
+    box-sizing: border-box; /* Ensure padding and border don't add to width */
+}
+
+.Contact textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.Contact button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Contact button:hover {
+    background-color: #45a049; /* Darken color on hover */
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .Portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .about, .services, .Portfolio, .Contact {
+        text-align: center;
+    }
+
+    .about img, .Portfolio img {
+        max-width: 100%;
+    }
+
+    .Portfolio {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about h3 {
+        font-size: 28px;
+    }
+
+    .services h4, .Portfolio h4 {
+        font-size: 20px;
+    }
+}
